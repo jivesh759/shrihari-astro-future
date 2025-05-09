@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Hari Astro Future</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8dc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('00.jpeg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background-color: #001f4d;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            color: #002366;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            color: #555;
+        }
+
+        .highlight {
+            color: darkred;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #002366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #001f4d;
+        }
+
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #002366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .contact h3 {
+            color: #002366;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            color: #333;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shri Hari Astro Future</h1>
+        <p>Astro Rohitas Sharma | Guidance for Life, Vastu & Spiritual Harmony</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome Viewers!</h2>
+            <p>I am Rohitas Sharma, a dedicated astrologer here to help you navigate life using traditional methods and Vastu knowledge. Explore our YouTube channel for remedies and guidance.</p>
+            <a class="btn" href="https://www.youtube.com/channel/UCL95SO1FJtw3cyBBDYxlXyg" target="_blank">Visit YouTube Channel</a>
+            <div id="datetime"></div>
+        </div>
+
+        <p class="highlight">Our channel helps with problems like Vastu Dosh, family instability, and temple placements. Don't forget to subscribe!</p>
+
+        <h2 style="text-align:center; margin-top: 30px;">Visual Inspiration</h2>
+        <div class="image-section">
+            <img src="https://www.templepurohit.com/wp-content/uploads/2015/07/Lord-Vishnu-Hindu-Gods-and-Deities-1.jpg" alt="Lord Vishnu">
+        </div>
+
+        <div id="contact" class="contact">
+            <h3>Contact Information</h3>
+            <p>Email: rohitashpilni@gmail.com</p>
+            <p>Phone: 9991302424, 7039312511</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shri Hari Astro Future. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            alert("Welcome to Shri Hari Astro Future!");
+            const now = new Date();
+            document.getElementById('datetime').innerText = "Today's Date and Time: " + now.toLocaleString();
+        };
+
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', function(event) {
+                const confirmRedirect = confirm("Do you want to visit our YouTube channel?");
+                if (!confirmRedirect) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
